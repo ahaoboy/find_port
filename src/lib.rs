@@ -20,10 +20,5 @@ pub fn port_is_available(host: &str, port: u16) -> bool {
 }
 
 pub fn find_port(host: &str, port: u16) -> Option<u16> {
-    for i in port..u16::MAX {
-        if port_is_available(host, i) {
-            return Some(i);
-        }
-    }
-    return None;
+    (port..u16::MAX).find(|&i| port_is_available(host, i))
 }
