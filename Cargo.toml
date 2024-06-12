@@ -1,9 +1,13 @@
 [package]
 name = "find_port"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
-description = "find port"
+description = "find an available port"
+repository = "https://github.com/ahaoboy/find_port"
+homepage = "https://github.com/ahaoboy/find_port"
+authors = ["ahaoboy"]
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
